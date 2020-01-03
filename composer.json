@@ -1,0 +1,28 @@
+{
+	"name": "rivervanrain/manage_notifications",
+	"type": "elgg-plugin",
+	"description": "Manage notification settings",
+	"keywords": [
+		"elgg", "plugin", "notifications"
+	],
+	"license": "GPL-2.0-only",
+	"authors": [
+		{
+			"name": "RiverVanRain",
+		},
+	],
+	"extra": {
+		"installer-name": "manage_notifications"
+	},
+	"require": {
+		"composer/installers": "^1.0.8"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+	"conflict": {
+		"elgg/elgg": "<3.2"
+	}
+}
