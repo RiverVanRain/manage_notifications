@@ -1,23 +1,19 @@
 <?php
 /**
- * Manage notifications Elgg plugin [Plugin]
- * @author RiverVanRain
- * @package Plugin
- * @license GNU General Public License version 2
- * @copyright (c) wZm 2020
+ * Manage notifications Elgg plugin
+ * @author Nikolai Shcherbin
+ * @license GNU Affero General Public License version 3
+ * @copyright (c) Nikolai Shcherbin 2020
  * @link https://wzm.me
 **/
 namespace wZm\ManageNotifications;
 
-use Elgg\Event;
-use ElggUser;
+class OnUserValidateEvent {
 
-class OnUserCreateEvent {
-
-	public function __invoke(Event $event) {
+	public function __invoke(\Elgg\Event $event) {
 
 		$entity = $event->getObject();
-		if (!($entity instanceof \ElggUser)) {
+		if (!$entity instanceof \ElggUser) {
 			return;
 		}
 		
