@@ -5,24 +5,30 @@
 	"keywords": [
 		"elgg", "plugin", "notifications"
 	],
-	"license": "GPL-2.0-only",
+	"license": "AGPL-3.0-or-later",
+	"homepage": "https://wzm.me",
 	"authors": [
 		{
-			"name": "RiverVanRain",
-		},
+		  "name": "Nikolai Shcherbin",
+		  "email": "support@wzm.me"
+		}
 	],
-	"extra": {
-		"installer-name": "manage_notifications"
-	},
-	"require": {
-		"composer/installers": "^1.0.8"
-	},
 	"autoload": {
 		"psr-0": {
 			"": "classes/"
 		}
 	},
+	"repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
 	"conflict": {
-		"elgg/elgg": "<3.2"
+		"elgg/elgg": "<4.3",
+		"subwebz/theme": "*"
+	},
+	"support": {
+		"source": "https://github.com/rivervanrain/manage_notifications"
 	}
 }
