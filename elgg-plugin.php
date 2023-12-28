@@ -19,9 +19,9 @@ return [
 	],
 	
 	'events' => [
-		'create' => [
+		'validate:after' => [
 			'user' => [
-				\wZm\ManageNotifications\OnUserCreateEvent::class => [],
+				\wZm\ManageNotifications\OnUserValidateEvent::class => [],
 			],
 		],
 	],

@@ -8,7 +8,7 @@
 **/
 namespace wZm\ManageNotifications;
 
-class OnUserCreateEvent {
+class OnUserValidateEvent {
 
 	public function __invoke(\Elgg\Event $event) {
 
