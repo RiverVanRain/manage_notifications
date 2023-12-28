@@ -11,7 +11,7 @@ return [
 		'name' => 'Manage notification settings',
 		'version' => '2.0.0',
 		'dependencies' => [
-			'notifications' => [
+			'site_notifications' => [
 				'must_be_active' => true,
 			],
 		],
