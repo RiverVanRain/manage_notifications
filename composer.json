@@ -9,7 +9,7 @@
 	"authors": [
 		{
 			"name": "RiverVanRain",
-		},
+		}
 	],
 	"extra": {
 		"installer-name": "manage_notifications"
